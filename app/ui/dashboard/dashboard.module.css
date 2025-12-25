@@ -1,0 +1,47 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+}
+
+.menu{
+    flex:1;
+}
+
+.content{
+
+    flex:6;
+}
+
+.title{
+    display:flex;
+    font-size:25px;
+    align-items: center;
+    gap:5px;
+    justify-content: center;
+}
+
+.title span{
+    color:var(--buttonPrimary);
+}
+
+
+.dashContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+    margin:30px;
+
+}
+
+.mainContent{
+    flex:3;
+    background-color: var(--bg);
+}
+
+.source{
+    flex:1;
+    background-color: var(--bg);
+}
+
+
