@@ -33,15 +33,103 @@
     margin:30px;
 
 }
+.mainContentContainer{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    gap:20px;
 
+}
 .mainContent{
-    flex:3;
+    display:flex;
+    flex-direction: column;
+    /* flex:2; */
     background-color: var(--bg);
+    padding:20px;
+    border-radius: 10px;
+    gap:10px;
 }
 
 .source{
     flex:1;
     background-color: var(--bg);
+    min-height: 80vh;
+    border-radius: 10px;
+}
+
+.titleDash{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px 10px 0px 10px;
+}
+
+.titleDash h2{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.titleDash span:hover{
+    cursor: pointer;
+}
+
+.card{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pathContent{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    padding:20px;
+    border-radius: 10px;
+    gap:20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+
+
+} 
+.pathContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
+.path{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+.path:not(:last-child){
+    font-weight: 300;
+}
+.bold{
+    font-weight: 600;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.btn button{
+    display:flex;
+    align-items: center;
+    background-color: var(--buttonPrimary);
+    color:#FFFFFF;
+    padding:3px 10px 3px 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 14px;;
+    font-weight: 600;
+
+}
+
+.btn button:hover{
+    cursor: pointer;
+}

@@ -4,6 +4,8 @@ import Styles from './sidebar.module.css'
 import { MdDelete, MdFavorite, MdFileCopy, MdRestore, MdSettings, MdShare, MdTag } from 'react-icons/md'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import { GrStorage } from 'react-icons/gr'
+import { IoIosArrowForward } from 'react-icons/io'
 
 const MenuItems = [
     {
@@ -55,7 +57,7 @@ export default function Sidebar() {
         {MenuItems.map((data,key)=>(
             <Link href={data.path}>
             
-            <li key={key} className={(pathName==data.path?Styles.isActive:"")}><span>{data.icons}</span>{data.title}</li>
+            <li key={data.title} className={(pathName==data.path?Styles.isActive:"")}><span>{data.icons}</span>{data.title}</li>
             </Link>
         ))}
       </ul>
@@ -63,7 +65,21 @@ export default function Sidebar() {
         {setting.map((data,key)=>(
             <li key={key}><span>{data.icons}</span>{data.title}</li>
         ))}
+        <div className={Styles.storage}>
+          <div className={Styles.storageTitle}>
+            <div>
+             <span><GrStorage color="#0c15f8"/></span>
+             <p>Storage</p>
+            </div>
+             <span className={Styles.hoverEffect}><IoIosArrowForward color='#0c15f8'/></span>
+          </div>
+          <div className={Styles.input}>
+            <input type="range"/>
+            <p>42 GB used from 256 GB</p>
+          </div>
+        </div>
       </ul>
+      
     </div>
   )
 }
