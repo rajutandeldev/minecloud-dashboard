@@ -1,76 +1,77 @@
-.container{
-    display:flex;
+.container {
+    display: flex;
     flex-direction: column;
     background-color: var(--bg);
-    margin:40px 30px;
-    padding:10px;
-    border-radius: 5px;;
+    margin: 40px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    ;
     min-height: 80vh;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     justify-content: space-between;
 }
 
 
-.container ul li{
+.container ul li {
     display: flex;
     align-items: center;
-    gap:10px;
-    padding:10px;
+    gap: 10px;
+    padding: 10px;
     width: 100%;
 
 }
 
 
-.container ul li:hover{
+.container ul li:hover {
     background-color: var(--hoverEffect);
     border-radius: 5px;
-    color:var(--buttonPrimary)
+    color: var(--buttonPrimary)
 }
 
-.isActive{
+.isActive {
     background-color: var(--hoverEffect);
     border-radius: 5px;
-    color:var(--buttonPrimary)
-
+    color: var(--buttonPrimary)
 }
 
-.storage{
+.storage {
     display: flex;
     align-items: start;
     flex-direction: column;
-    padding:10px;
-    border:2px solid var(--hoverEffect);
+    padding: 10px;
+    border: 2px solid var(--hoverEffect);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     margin-top: 10px;
 }
 
 
-.input p{
-  font-size: 12px;;
-  font-weight: 300;
+.input p {
+    font-size: 12px;
+    ;
+    font-weight: 300;
 }
 
-.input input:hover{
+.input input:hover {
     cursor: pointer;
 }
 
-.storageTitle{
+.storageTitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap:10px;
+    gap: 10px;
 }
 
-.storageTitle div{
+.storageTitle div {
     display: flex;
     align-items: center;
-    gap:5px;
+    gap: 5px;
 }
 
 
-.hoverEffect:hover{
-  cursor: pointer;
+.hoverEffect:hover {
+    cursor: pointer;
 
 }

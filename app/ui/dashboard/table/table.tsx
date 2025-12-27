@@ -46,7 +46,7 @@ export default function Table() {
                         size='16.5 MB'
                         modified='Dec 10,2022'
                     />
-<TableData
+                    <TableData
                         name="Docs"
                         sharing='Public'
                         size='4.5 MB'
@@ -76,7 +76,7 @@ export default function Table() {
                         size='4.5 MB'
                         modified='Apr 10,2022'
                     />
-                
+
                 </tbody>
             </table>
         </div>
